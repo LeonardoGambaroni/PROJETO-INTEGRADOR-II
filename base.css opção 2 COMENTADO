@@ -1,0 +1,77 @@
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* faz com que width inclua padding e border */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fundo da página */
+  body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fundo com degradê, do roxo ao azul em 135 graus */
+    height: 100vh; /* Faz o body ter 100% da altura da janela */
+    display: flex; /* Facilita centralizar elementos */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro e junto com align-items centraliza o .container no meio da tela */
+  }
+  
+  /* Container (caixa branca) do formulário */
+  .container {
+    background: #fff; /* fundo branco do formulario */
+    padding: 30px; /* Espaço interno entre borda e conteudo */
+    border-radius: 12px; /* Centros arredondados */
+    width: 350px; /* Largura fixa para o formulario */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra sutil que esta por baixo, com efeito de elevação */
+  }
+  
+  /* Título */
+  .container h2 {
+    text-align: center; /* Centraliza o texto do h2 */
+    margin-bottom: 20px; /* Separação entre título e formulario */
+    color: #333; 
+  }
+  
+  /* Estilo dos labels */
+  form label {
+    display: block; /* Faz o label ocupar toda a linha, permitindo que o input fique na linha de baixo */
+    margin-bottom: 5px; /* espaçamento entre os campos */
+    font-weight: bold; /* texto em negrito */
+    color: #444;
+  }
+  
+  /* Estilo dos inputs */
+  form input {
+    width: 100%; /* Faz o input ocupar toda a largura da "caixa" */
+    padding: 10px; /* Espaço interno do campo de digitação */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* borda leve com cor neutra */
+    border-radius: 8px; /* cantos arredondados dos inputs */
+    outline: none; /* Tira a borda padrão azul ao focar (:focus) */
+    transition: 0.3s; /* animação das mudanças de propriedade */
+  }
+  
+  /* Efeito ao clicar(focar) no input */
+  form input:focus {
+    border-color: #2575fc; /* muda a cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(37,117,252,0.5); /* brilho leve para destacar o campo */
+  }
+  
+  /* Botão */
+  form button {
+    width: 100%; /* Botão ocupa toda a largura da caixa */
+    padding: 12px; /* Deixa o botão com uma boa área para clicar */
+    background: #2575fc; /* Cor do botão */
+    border: none; /* Tira a borda padrão */
+    border-radius: 8px; /* Canto arredondado */
+    color: white; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Muda o cursor para pointer quando passa por cima */
+    transition: 0.3s; /* Muda o efeito no (:hover) */
+  }
+  
+  /* Efeito hover no botão */
+  form button:hover {
+    background: #6a11cb; /* Muda a cor do botao quando o mouse passa por cima */
+  }
+  
+  
